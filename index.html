@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nowa Randkowa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
+      color: #333;
+    }
+    header {
+      background-color: #e91e63;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #c2185b;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    }
+    .container {
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea, select, button {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #d81b60;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nowa Randkowa</h1>
+    <p>Twoje nowe miejsce na poznanie drugiej połówki ❤️</p>
+  </header>
+  <nav>
+    <a href="#">Strona Główna</a>
+    <a href="#rejestracja">Rejestracja</a>
+    <a href="#logowanie">Logowanie</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <div class="hero">
+    <div>Znajdź miłość już dziś!</div>
+  </div>
+  <div class="container">
+    <div class="card">
+      <h2>Dlaczego warto?</h2>
+      <p>Nasza społeczność rozwija się każdego dnia. Spotkaj osoby w Twojej okolicy i poznaj nowe przyjaźnie.</p>
+    </div>
+
+    <div class="card" id="rejestracja">
+      <h2>Rejestracja</h2>
+      <form>
+        <input type="text" placeholder="Imię" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Hasło" required />
+        <select required>
+          <option value="">Szukam...</option>
+          <option value="kobieta">Kobiety</option>
+          <option value="mezczyzna">Mężczyzny</option>
+        </select>
+        <button type="submit">Zarejestruj się</button>
+      </form>
+    </div>
+
+    <div class="card" id="logowanie">
+      <h2>Logowanie</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Hasło" required />
+        <button type="submit">Zaloguj się</button>
+      </form>
+    </div>
+
+    <div class="card" id="kontakt">
+      <h2>Kontakt</h2>
+      <form>
+        <input type="text" placeholder="Twoje imię" required />
+        <input type="email" placeholder="Twój email" required />
+        <textarea placeholder="Wiadomość" rows="4" required></textarea>
+        <button type="submit">Wyślij</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Nowa Randkowa. Wszelkie prawa zastrzeżone.
+  </footer>
+</body>
+</html>
